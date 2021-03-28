@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { names } from './names.json';
 
-function App() {
+const item = (items: string[]) =>
+  items[Math.floor(Math.random() * items.length)];
+
+const App: React.FC = () => {
+  const [name, setName] = React.useState(item(names));
+
+  const clickHandler = () => {
+    setName(item(names));
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="parent">
+      <div className="child">
+        <button className="btn" onClick={clickHandler}>
+          הצג שם
+        </button>
+        <h1 className="result">{name}</h1>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
