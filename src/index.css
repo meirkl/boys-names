@@ -1,11 +1,11 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
 
 .parent {
   display: grid;
@@ -20,7 +20,6 @@ body {
 }
 
 .child {
-  font-size: 2rem;
   text-align: center;
 }
 
@@ -29,16 +28,27 @@ body {
   background: lightpink;
   border-radius: 10px;
   padding: 0.5rem;
+  margin-top: 1.2rem;
+  font-size: 3rem;
 }
 
 .btn {
   padding: 0.5rem;
   border-radius: 10px;
   border: 1px;
+  font-size: 1.2rem;
 }
 
-/* body {
+.show-btn {
+  background-color: #a2aad6;
+}
+
+.like-btn {
+  background-color: #efefef;
+}
+
+body {
   font-family: system-ui, serif;
   padding: 0;
   margin: 0;
-} */
+}
