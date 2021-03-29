@@ -1,0 +1,2 @@
+.parent{display:grid;place-items:center;background:#add8e6;width:100vw;height:100vh;resize:both;overflow:auto}.child{text-align:center}.result{border:1px solid red;background:#ffb6c1;border-radius:10px;margin-top:1.2rem;font-size:3rem}.btn,.result{padding:.5rem}.btn{border-radius:10px;border:1px;font-size:1.2rem}.show-btn{background-color:#a2aad6}.like-btn{background-color:#efefef}body{font-family:system-ui,serif;padding:0;margin:0}
+/*# sourceMappingURL=main.43ecdb14.chunk.css.map */
